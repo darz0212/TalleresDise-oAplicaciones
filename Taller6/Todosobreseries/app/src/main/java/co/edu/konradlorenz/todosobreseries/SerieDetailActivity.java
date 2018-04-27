@@ -137,7 +137,7 @@ public class SerieDetailActivity extends AppCompatActivity implements FragmentoC
                         int position = recyclerView.getChildAdapterPosition(child);
                         setCapituloList(temporadaList.get(position).getCapituloList());
                         position += 1;
-                        Toast.makeText(SerieDetailActivity.this,"Temporada: "+ position ,Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(SerieDetailActivity.this,"Temporada: "+ position ,Toast.LENGTH_SHORT).show();
                         capitulosRecyclerView = (RecyclerView) findViewById(R.id.chapters_recycler_view);
 
                         adapterCapitulos = new CapitulosAdapter(SerieDetailActivity.this,capituloList);

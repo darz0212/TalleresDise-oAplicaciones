@@ -56,7 +56,7 @@ public class CapitulosAdapter extends RecyclerView.Adapter<CapitulosAdapter.MyVi
         holder.elementView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(mContext,"Capítulo: "+capitulo.getNombre(),Toast.LENGTH_SHORT).show();
+                //Toast.makeText(mContext,"Capítulo: "+capitulo.getNombre(),Toast.LENGTH_SHORT).show();
                 holder.numero.setText(capitulo.getNumeroCapitulo()+". "+capitulo.getNombre()+":  \n"+capitulo.getDescripción()+" "+capitulo.getNumeroCapitulo());
             }
         });
